@@ -1,0 +1,7 @@
+Libraries Used
+
+numpy
+Matplotlib
+hdbscan
+kafka-python
+scikit-learn
