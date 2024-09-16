@@ -1,6 +1,6 @@
 Efficient Data Stream Anomaly Detection
 
-Python Version Used - 3.11
+Python Version Used - 3.11.0
 
 
 Algorithm Chosen - Half-Space Tree (HS Tree)
