@@ -1,5 +1,3 @@
-Libraries Used
-
 numpy
 matplotlib
 hdbscan
