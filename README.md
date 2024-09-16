@@ -28,14 +28,14 @@ Reasons for adopting this algorithm -
 
 Result Plots of Anamoly Detection :
 
-1. Anomaly detection on slow shifting Seasonal Drift data
+1. Anomaly detection on slow Seasonal Drift data
 ![Anamoly_Detection](https://github.com/user-attachments/assets/0e984df5-7ed5-4e5c-a8f6-9df49d9f7a88)
 
 
 
 
 
-2. Anomaly Detection on rapid shifting Seasonal Drift data
+2. Anomaly Detection on rapid Seasonal Drift data
 
 ![Anamoly_Detection_2](https://github.com/user-attachments/assets/3bb99c8f-067a-4bba-bb4b-d161de0ee770)
 
