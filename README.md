@@ -47,13 +47,16 @@ The data stream is continuously produced at regular intervals, simulating a real
 
 **1. Anomaly detection on standard Simulated Data generated with parameters mentioned in above Data Simulation section**
    
-![Anamoly_Detection_3](https://github.com/user-attachments/assets/8234d491-c357-48f1-82b8-d3dc34e3aee3)
+![Anamoly_Detection_4](https://github.com/user-attachments/assets/44b94bc6-92ad-4106-ab1f-46873e9fec9d)
+
+
 
 
 
 
 
 **2. Anomaly Detection on rapid Seasonal Drift data: Drift speed is increased to the normal distribution (mean = 500, standard deviation = 1000) and added successively with each random value.**
+
 
 ![Anamoly_Detection_2](https://github.com/user-attachments/assets/3bb99c8f-067a-4bba-bb4b-d161de0ee770)
 
