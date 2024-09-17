@@ -22,7 +22,25 @@ Reasons for adopting this algorithm -
 6. Versatility: HS Tree can be adapted to different anomaly detection scenarios, whether the anomalies are outliers, changes in distribution, or unusual patterns in the data.
 
 
+Data Simulation
 
+The data stream is designed to mimic real-world scenarios, such as financial transactions or system metrics, where patterns can be affected by trends, seasonality, and noise. This simulation generates continuous floating-point numbers that include regular variations, occasional spikes, and random noise. Below is a breakdown of the data generation process:
+
+Base Value Generation:
+
+A random floating-point number is generated at each time step from a uniform distribution ranging between -100 and 100. This forms the core data stream.
+Seasonal Drift:
+
+To simulate real-world seasonality or long-term trends, a drift value is introduced. This drift accumulates over time, representing a slowly changing baseline that shifts the average value of the data stream. The drift value itself is updated at each step using a normal distribution (mean = 0, standard deviation = 1), simulating unpredictable gradual shifts in the data.
+Random Noise:
+
+To make the data more realistic, Gaussian noise is added to each generated value. This noise has a mean of 0 and a standard deviation of 5, simulating small-scale random fluctuations in real-world data.
+Occasional Spikes:
+
+At irregular intervals (with a 10% chance per time step), a significant "spike" is added to the data. These spikes can either be positive or negative, with magnitudes randomly chosen between 200 and 500. The direction of the spike is also random, and its magnitude is further influenced by the current drift, amplifying the effect of the spike.
+Real-Time Stream:
+
+The data stream is continuously produced at regular intervals, simulating a real-time feed. Each data point is published to a Kafka topic to allow for real-time consumption and processing by downstream components.
 
 
 
