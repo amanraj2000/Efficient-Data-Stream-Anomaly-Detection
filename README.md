@@ -27,7 +27,6 @@
 The data stream is designed to mimic real-world scenarios, such as financial transactions or system metrics, where patterns can be affected by trends, seasonality, and noise. This simulation generates continuous floating-point numbers that include regular variations, occasional spikes, and random noise. Below is a breakdown of the data generation process:
 
 **Base Value Generation:**
-
 A random floating-point number is generated at each time step from a uniform distribution ranging between -100 and 100. This forms the core data stream.
 
 **Seasonal Drift:**
@@ -46,15 +45,15 @@ The data stream is continuously produced at regular intervals, simulating a real
 
 ### Result Plots of Anamoly Detection :
 
-1. Anomaly detection on slow Seasonal Drift data
-![Anamoly_Detection](https://github.com/user-attachments/assets/0e984df5-7ed5-4e5c-a8f6-9df49d9f7a88)
+1. Anomaly detection on standard simulated Data generated above
+   
+![Anamoly_Detection_3](https://github.com/user-attachments/assets/8234d491-c357-48f1-82b8-d3dc34e3aee3)
 
 
 
 
 
-2. Anomaly Detection on rapid Seasonal Drift data
-
+3. Anomaly Detection on rapid Seasonal Drift data: Drift speed is increased to the normal distribution (mean = 500, standard deviation = 1000) and added successively with each random value.
 ![Anamoly_Detection_2](https://github.com/user-attachments/assets/3bb99c8f-067a-4bba-bb4b-d161de0ee770)
 
 
